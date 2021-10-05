@@ -39,7 +39,7 @@ $kubectl logs nginx4
 $kubectl describe pod nginx4
 ```
 
-Use of Labels:
+### Use of Labels:
 Labels can be used to query object eg
 
 ```sh
