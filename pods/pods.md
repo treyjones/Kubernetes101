@@ -34,7 +34,7 @@ $kubectl get pods
 $kubectl logs nginx4
 ```
 
-## get more pod details
+## Get more pod details
 ```sh
 $kubectl describe pod nginx4
 ```
