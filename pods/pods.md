@@ -1,12 +1,12 @@
 We will create the pod using a yaml file
 
 Hands-on <<<<<<<PODS>>>>>>>>>:
-# create a file by the name simple-one.yaml
+## create a file by the name simple-one.yaml
 Touch simple-one.yaml
 # Edit the file
 Nano simple-one.yaml >>
 # paste the content below
-apiVersion: v1
+```apiVersion: v1
 kind: Pod
 metadata:
   name: nginx4
@@ -14,7 +14,7 @@ spec:
   containers:
   - name: simple-pod
     image: nginx
-
+```
 # save the file and run the command 
 <<<kubectl apply -f simple-pod.yaml>>>
 
