@@ -2,10 +2,14 @@ We will create the pod using a yaml file
 Hands-on PODS:
 
 ## create a file by the name simple-one.yaml
+```sh 
 Touch simple-one.yaml
+```
 
 ## Edit the file
+```sh 
 Nano simple-one.yaml 
+```
 
 ## paste the content below
 ```sh
