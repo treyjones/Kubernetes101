@@ -1,0 +1,17 @@
+Create new pod (1-pod.yaml)
+kubectl apply -f ./k8s/1-pod.yaml
+kubectl get all
+kubectl describe pod/hello
+kubectl logs hello
+kubectl get pods - See restarts
+kubectl delete pod hello
+kubectl apply -f ./k8s/2-webserver.yaml
+kubectl get all
+kubectl exec -it pod/webserver -- /bin/bash
+service nginx status
+exit
+kubectl apply -f ./k8s/3-toolbox.json
+kubectl exec -it pod/toolbox -- /bin/bash
+printenv
+curl google.com
+curl webserver Log back into web server hostname -I log back in toolbox curl ip
