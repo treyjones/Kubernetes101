@@ -46,8 +46,8 @@
 A **Probe** is a diagnosis performed periodically by the Kubelet on a container.
 - Kubelet invoke the actions:
 1. **ExecAction** - performed with the help of the container runtime
-2. TCPSocketAction - Checked directly by the kubelet
-3. HTTPGetAction - checked directly by kubelet
+2. **TCPSocketAction** - Checked directly by the kubelet
+3. **HTTPGetAction** - checked directly by kubelet
 
 ### Pod Lifecycle
 - Pods follow a define lifecycle, starting with _Pending phase_ to _Running Phase_

@@ -3,7 +3,7 @@ kubectl get nodes -o json | jq '.items[].spec.taints'
 ```
 Output the result to a file...
 
-A sample of Node spec.tain values
+A sample of Node spec.taints values
 ```sh [
   {
     "effect": "NoSchedule",
@@ -18,10 +18,12 @@ A sample of Node spec.tain values
   }
 ]
 ```
-
+## QUIZ??
+What does the command below do?
 ```sh
 kubectl uncordon node01
 ```
+> When you want to run an upgrade on the node. **Then at this point it cannot accept pods**. uncordon restores the node back to be able to receive pods or so.
 
 ### Why cant I access my service?
 First, lets get a look at whats happening within the cluster, specifically to make sure that their container is running.
